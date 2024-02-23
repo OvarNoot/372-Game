@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Horr game probably?</title>
+		<style>
+			body { margin: 0; }
+			#scores {
+				color:white;
+				position: absolute;
+				top: 60px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="scores">
+			<h2>Score: </h2>
+			<span id="score"></span>
+		</div>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+                    "OrbitControls": "https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js",
+                    "FBXLoader": "https://unpkg.com/three@0.161.0/examples/jsm/loaders/FBXLoader.js",
+                    "Stats": "https://unpkg.com/three@0.161.0/examples/jsm/libs/stats.module.js"
+
+
+                }
+            }  
+        </script>
+		<script type="module" src="main.js">
+
+        </script>
+	</body>
+</html>
